@@ -1,0 +1,39 @@
+_____________Angular__________
+
+Environment setup -
+   1. node js  - https://nodejs.org/en/    (download LTS) and install
+       npm - (node package manager)
+   2. Angular  (create single page web application - Framework )
+
+angular -
+	html, css, ts, (js)
+	css - bootstrap (css library)
+
+command -
+	# npm --version (check the version)
+	# npm install -g @angular/cli (install angular)
+	# ng (angular)
+	# ng --version (check angular version)
+ 	 
+create component 
+	#  ng generate component component_name
+	# ng g c component_name
+
+create service 
+	# ng generate service data	
+
+adding bootstrap in angular project -
+	1. npm install bootstrap
+	2. npm install jquery 
+	'adding path in to angular.json''
+               style.css[	 	    	                     "node_modules/bootstrap/dist/css/bootstrap.min.css"	
+	]
+	script[
+	  "node_modules/jquery/dist/jquery.min.js",
+                    "node_modules/bootstrap/dist/js/bootstrap.min.js"
+	]
+	src/style.css
+	@import '~bootstrap/dist/css/bootstrap.min.css';
+
+
+	
