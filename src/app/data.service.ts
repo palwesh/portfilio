@@ -8,8 +8,10 @@ export class DataService {
 
   contacts=[
     
-    {id:1,name:"nawaz",description:'contact-data',email:'shiva@gmail.com'},
-    {id:2,name:"bande",description:'contact 1 data',email:'mohan@gmail.com'}
+    {id:1,name:"Robot 1",description:'contact-data',email:'robo@gmail.com'},
+    {id:2,name:"xyz",description:'contact d1 data',email:'xyz@gmail.com'},
+    {id:2,name:"ps",description:'contact 1dd data',email:'psps@gmail.com'},
+    {id:2,name:"pspss",description:'contact s1 data',email:'ps@gmail.com'}
   ];
 
 
