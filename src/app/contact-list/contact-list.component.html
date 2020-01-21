@@ -1,0 +1,35 @@
+<div>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">NAME</th>
+        <th scope="col">EMAIL</th>
+        <th scope="col">ACTION</th>
+      </tr>
+    </thead>
+    <tbody>
+
+       <tr *ngFor ="let contact of contacts">
+        <td>{{contact.id}}</td>
+        <td> {{contact.name}}</td>
+        <td>{{contact.email}}</td>
+        <td> <button type="button" class="btn btn-primary" (click) = "selectContact(contact)">
+        view Contact
+        </button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+  <div class="card-centre" *ngIf ="selectedContact">
+  <div class="card text-centre" style="width: 18rem;">
+    <div class="card-header">
+      <p>{{selectedContact.id}}</p></div>
+      <div class="card-body">
+      <h5 class="card-title">{{selectedContact.name}}</h5>
+      <p class="card-text">{{selectedContact.description}}</p>
+    </div>
+  </div>
+  </div>
+</div>

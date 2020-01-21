@@ -1,0 +1,70 @@
+<div class="container viewdata">
+    <div class="row">
+        <div class="col-sm-8">
+
+            <div>
+                <form>
+                    <div class="form-group">
+                        <label for="idinput">ID</label>
+                        <input type="text"
+                        [(ngModel)]="contact.id"
+                         class="form-control"
+                         name="id"
+                         id="input"
+                         placeholder="enter contact ID"
+                         aria-description="emailHelp">
+                         <small id="idhelp" class="form-text  text-muted">enter ur contact id</small>
+
+
+
+
+                         
+                            <label for="contact-name">Nme-id</label>
+                           <input type="text"
+                            [(ngModel)]="contact.name"
+                             class="form-control"
+                             name="name"
+                            id= "contact_name"
+                             placeholder="enter contact Name"
+                             aria-description="nameHelp">
+                             <small id="idhelp" class="form-text  text-muted">enter ur contact id</small>
+
+
+
+
+
+                             
+                                <label for="contact-emial">Email-id</label>
+                               <input type="text"
+                               [(ngModel)]="contact.email"
+                                 class="form-control"
+                                 name="email"
+                                 id="contact-email"
+                                 placeholder="entr contactt email"
+                                 aria-description="emailHelp">
+                                 <small id="descriptionhelp" class="form-text  text-muted">enter ur contact description</small>
+
+
+                                 
+                                    <label for=contact-desc>Description</label>
+                                   <textarea type="text"
+                                   [(ngModel)]="contact.description"
+                                     class="form-control"
+                                     name="desc"
+                                     id="contact_desc"
+                                     col="30"
+                                     rows="4"
+                                     placeholder="description here"
+                                     aria-description="emailHelp">
+                                     </textarea>
+
+                                     <small id="deschelp" class="form-text  text-muted">enter ur contact id</small>
+                                     <button class="btn btn-success" (click)="createContact()"> create contact</button> 
+                                    </div>
+                                 
+                     
+                </form>
+            </div>
+         </div>
+     </div>
+  </div>   
